@@ -7,13 +7,10 @@ import android.os.Handler
 import android.os.Looper
 import android.util.Log
 
-class MainActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this,HomeActivity::class.java))
-            finish()
-        },2000)
+        setContentView(R.layout.activity_home)
+
     }
 }
